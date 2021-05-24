@@ -1,0 +1,425 @@
+$white: #fff;
+$white-light: #E6E6E6; /*border-bottom:*/
+$grey: #48555B;
+$blue: #00A4E5;  
+$black:  #141A20; /*.contacts: background*/
+$black-light: #171819;  /* .signup: background*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.wrapper {
+    max-width: 1442px;
+    padding: 0 250px;
+}
+header {
+       background: {
+        image: url(./images/background_header.jpg);
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+    min-height: 768px;
+   
+    .header-content{
+        padding: {
+            top: 41px;
+            bottom: 307px;
+        }
+        text-align: center;
+        color: $white;
+        .logo-primary {
+            width: 100%;
+            max-width: 101.62px;
+            height: 23px;
+            display: inline-block;
+            margin-bottom: 317px;
+        }
+        .header-title {
+            font: {
+                family: 'Bebas Neue', cursive;
+                size: 60px;
+                weight: 400;
+            }
+            text-transform: uppercase;   
+        }
+        .header-subtitle {
+          font-size: 16px;
+        }
+    }
+}
+.navigation {
+    background-color: $white;
+}
+    .navigation-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: {
+            top: 24px;
+            bottom: 23px;
+        }
+        border-bottom: 1px solid $white-light;
+        margin-bottom: 58px;
+            .logo-secondary {
+            width: 100%;
+            max-width: 79.52px;
+            height: 18px;
+            display: inline-block;
+        }
+        .navigation-link {
+            text: {
+                decoration: none;
+                transform: uppercase;
+            }
+            color: $grey;
+            font: {
+                size: 12px;
+                weight: 600;
+            }
+            margin-right: 30px;
+                &:last-child {
+                    margin-right: 0;
+                }
+        }
+    }
+.story-background {
+    @extend .navigation;
+}
+    .story {
+        margin-bottom: 118px;
+    }   
+        .story-title-header {
+            font: {
+                size: 18px;
+                weight:700;
+            }
+            color: $grey;
+            text: {
+                align: center;
+                transform: uppercase;
+            }
+            margin-bottom: 10px;
+        }
+        .brake-line {
+        border: 1px solid $blue;  
+        width: 50px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        }
+        .story-subtitle {
+            display: flex;
+            justify-content: space-between;
+            color: $grey;
+            &-info {
+                width: 100%;
+                max-width: 400px;
+                &-blok-primary {
+                    font: {
+                        size: 20px;
+                        weight: bold;
+                    }
+                    margin-bottom: 30px;
+                    span {
+                        color: $blue;
+                    }
+                }
+                &-blok-secondary {
+                    font: {
+                        size: 13px;
+                        weight: 400;
+                    }
+                }
+            }
+            .story-subtitle-image {
+                width: 100%;
+                max-width: 130px;
+                max-height: 220px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+.capabilities-background {
+    @extend .navigation;
+}
+    .capabilities {
+        margin-bottom: 115px;
+    }
+        .capabilities-title {
+            display: flex;
+            justify-content: space-between;
+        }
+    .capabilities-title-header {
+        @extend .story-title-header;
+        text-align: left; 
+    }
+    .brake-line-secondery {
+        @extend .brake-line;
+        margin-left: 0;
+    }
+    .capabilities-title-header-info {
+        max-width: 405px;
+        font-size: 11px;
+        color: $grey;
+    }
+    .button-primery {
+        font: {
+            size: 13px;
+            weight:bold;
+        }
+        text-transform: uppercase;
+        border: none;
+        background: $blue;
+        color: $white;
+        width: 100%;
+        max-width: 150px;
+        height: 40px;
+        cursor: pointer;
+    }
+    .capabilities-service {
+        width: 100%;
+        max-width: 295px;
+        border: 1px solid $white-light;
+        padding: 38px 22px;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-icon {
+            margin-bottom: 25px;
+        }
+        &-title {
+            font: {
+                size: 16px;
+                weight: 700;
+            }
+            text-transform: uppercase;
+            margin-bottom: 13px;
+        }
+        &-subtitle {
+            font: {
+                size: 13px;
+                weight: 400;
+            }
+        }
+    }
+    .capabilities-services {
+        display: flex;
+        justify-content: space-between;
+    }
+    .get-in-touch {
+        background: {
+            image: url(./images/background_get-in-touch.png);
+            repeat: no-repeat;
+            position: center;
+            size: cover;  
+        }
+        &-info {
+            text-align: center;
+            padding: {
+                top: 120px;
+                bottom: 231.24px;
+            }
+        &-title {
+            font: {
+                size: 30px;
+                weight: 700;
+            }
+                color: $grey;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .signup {
+        background-color: $black-light;
+        padding: 30px 0;
+        &-section {
+            display: flex;
+            justify-content: center;
+            &-title {
+                font: {
+                    size: 22px;
+                    weight: 700;
+                }
+                color: $white;
+                margin-right: 70px;
+            }
+        }
+    }
+    form {
+        display: flex;
+    }
+    input {
+        width: 400px;
+        height: 40px;
+    }
+.contacts {
+    background: $black; 
+}
+    .contacts-contener {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        padding: {
+            top:   41px;
+            bottom: 40px;
+        }
+        .company {
+            width: 100%;
+            max-width: 250px;
+        }
+    }
+    .contacts-titles {
+        font: {
+            size: 11px;
+            weight:400;
+        }
+        text-transform: uppercase;
+        margin: {
+            bottom: 15px;
+        }
+        
+    }
+
+    .contacts-subtitles {
+        font: {
+            size: 11px;
+            weight:400;
+        }
+    }
+    .contacts-links {
+        width: 100%;
+        max-width: 262px;
+        max-height: 150px;
+        text-transform: uppercase;
+        
+       .contacts-links-contener {
+            display: flex;
+        }
+    }   
+        .contacts-links-blocks {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+        .contacts-links-block {
+            @extend .contacts-links-blocks;
+        }
+        .contacts-link {
+            font: {
+                size: 11px;
+                weight: 600;
+            }
+            text-decoration: none;
+            color: $white;
+            margin: {
+                left: 0;
+                bottom: 10px;
+            }
+        }
+
+    .contact-us {
+        @extend .contacts-subtitles;
+        width: 100%;
+        max-width: 141px;
+        font-style: normal;
+    }
+    .social-media-icon {
+        display: inline-block;
+        color: $white;
+        width: 13px;
+        margin: {
+            top: 30px;
+            right: 15px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    footer {
+        background-color: $black-light;
+        color: $white;
+        .footer {
+            padding: {
+                top: 23px;
+                bottom: 24px;
+            }
+            &-info {
+                font: {
+                    size: 11px;
+                    weight: 400;
+                }
+                text-align: center;
+            }
+        }
+    }
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .wrapper {
+                padding: 20px;
+            }
+            .story-subtitle {
+                flex-direction: column;
+                align-items: center;
+                &-info {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+          
+        }
+        
+        @media screen and (max-width:769px) {
+            .wrapper {
+                padding: 20px;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .story {
+                margin-bottom: 20px;
+            }   
+            .story-subtitle-images {
+                 display: none;
+            }
+            form {
+              flex-direction: column;
+            }
+            input {
+            width:100%;
+            max-width: 400px;
+            }
+            .contacts-contener {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .capabilities {
+                margin-bottom: 20px;
+                
+            }
+            .capabilities-title {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+                .brake-line-secondery {
+                    margin-bottom: 20px;
+                }
+            .capabilities-services {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+            }   
+                .capabilities-service {
+                        margin-right: 0;
+                }
+            }
+        
+    
